@@ -8,8 +8,9 @@ class Aprendiz
     //metodos
     function saludar()
     {
-        echo "Y mi nombre es el mejor osea $this->nombre <br>";
+        echo "Pertenezco a la mejor ficha numero  $this->ficha <br>";
     }
+
     //METODOS SETTER
     function setNombre($nombre)
     {
@@ -50,8 +51,10 @@ class Aprendiz
 $ob1 = new Aprendiz();
 $ob1->setNombre("kevin");
 $ob1->setPrograma('ADSI');
+$ob1->setFicha("2142345");
 
-echo 'Me llamo ' . $ob1->getNombre() . 'estudio...' . $ob1->getPrograma();
+echo 'Me llamo ' . $ob1->getNombre() . 'estudio en el SENA el programa ' . $ob1->getPrograma();
+echo '<br>';
 $ob1->saludar();
 /*$ob2=new Aprendiz();
 $ob2->setNombre("Pedro");
